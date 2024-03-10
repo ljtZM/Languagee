@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原音模式</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .section {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin-top: 20px;
+            background-color: #f0f0f0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .content {
+            background-color: #e0e0e0;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .section-split {
+            display: flex;
+            width: 100%;
+        }
+
+        .split-left, .split-right {
+            width: 50%;
+        }
+
+        .split-left {
+            background-color: #f0f0f0;
+        }
+
+        .split-right {
+            background-color: #f0f0f0;
+        }
+
+.dropdown {
+            margin-top: 10px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 15px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">高音模式</h1>
+    
+    <div class="container">
+        <div class="section content">
+        <h2>内容</h2>
+        <p><strong>A.声调语料：</strong>（10，已乱序）<br>
+        万紫千红 满目疮痍 相濡以沫 纸醉金迷 铭心刻骨<br>
+        逍遥法外 木已成舟 海誓山盟 过眼云烟 五光十色</p>
+        
+        <p><strong>B.元音语句：</strong>（10，a、e、i 、u 、ü 、i前、i后均为12次）<br>
+        1.我弟弟力气大。<br>
+        2.兔子吃四根萝卜，狮子只去吃西瓜。<br>
+        3.拔萝卜是力气活。<br>
+        4.绿色画笔画树叶。<br>
+        5.瀑布下是大石头。<br>
+        6.坐这个车比那个车舒服。<br>
+        7.由于大卡车那么大，路过时压住了书。<br>
+        8.吕菊芝阿姨屋子中的大玉石与陶瓷不可思议。<br>
+        9.今日他撕纸画画，女孩写字赋诗词。<br>
+        10.棉絮和羽绒丝丝缕缕织成被子。</p>
+        
+        <p><strong>C.辅音语句：</strong>（l 7+1;n 7;s 7;x 7;sh 7;h 7;f 7;r 7）<br>
+        11.拉丝的奶酪挡住了农夫的小车。<br>
+        12.旅客的新娘脑子不好还耍无赖，真讨人厌。<br>
+        13.师兄在海河的方舟上对他死心了。<br>
+        14.佛像在福建着陆。<br>
+        15.神州万里同怀抱。<br>
+        16.师傅，请分一下糖，一人一个。<br>
+        17.给我来三匹这种丝绸，分装。<br>
+        18.那个人做的黄色的大福好吃。<br>
+        19.那个穿深色风衣的人是我的同仁。<br>
+        20.写关于染色体的难题真让我脑袋疼。</p>
+    </div>
+
+        
+        <div class="section section-split">
+            <div class="split-left">
+                <h2>男</h2>
+                <div class="dropdown">
+                    <select id="maleSelect">
+                      <option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\于爽提高.mp3">音频1</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\任宇轩提高.mp3">音频2</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\倪骏+提高.mp3">音频3</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\刘子驹 提高.mp3">音频4</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\吕良宸-提高.mp3">音频5</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\孙英效 提高.mp3">音频6</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\崔智伟+提高.mp3">音频7</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\张志扬_A_提高.mp3">音频8</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\张志扬_B_提高.mp3">音频9</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\张志扬_C_提高.mp3">音频10</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\张梓洋 提高.mp3">音频11</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\张毅明A提高.mp3">音频12</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\张毅明B提高.mp3">音频13</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\张毅明C提高.mp3">音频14</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\张行健+提高.mp3">音频15</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\彭佳阳 提高.mp3">音频16</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\李泽锴 提高.mp3">音频17</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\李珂稷+提高.mp3">音频18</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\杨佳璇_A_提高.mp3">音频19</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\杨佳璇_B_提高.mp3">音频20</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\杨佳璇_C_提高.mp3">音频21</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\翁晓祥提高.mp3">音频22</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\耿茂祥  提高.mp3">音频23</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\胡耘嘉 提高.mp3">音频24</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\薛文斌A提高.mp3">音频25</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\薛文斌B提高.mp3">音频26</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\薛文斌C提高.mp3">音频27</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\贾子辰_A_提高.mp3">音频28</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\贾子辰_B_提高.mp3">音频29</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\贾子辰_C_提高.mp3">音频30</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\贾淳尧A提高.mp3">音频31</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\贾淳尧B提高.mp3">音频32</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\贾淳尧C提高.mp3">音频33</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\赵释宁+提高.mp3">音频34</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\邓龙涛 提高.mp3">音频35</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高男\郭子尧+提高.mp3">音频36</option>
+
+
+                        <!-- 其他音频选项 -->
+                    </select>
+                    <button onclick="playAudio('male')">开始播放</button>
+                    <button onclick="pauseAudio('male')">暂停播放</button>
+                    <!-- 上一首、下一首等按钮 -->
+                </div>
+            </div>
+            <div class="split-right">
+                <h2>女</h2>
+                <div class="dropdown">
+                    <select id="femaleSelect">
+                       <option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\于小俪+提高.mp3">音频1</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\于晶晶+提高.mp3">音频2</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\云朵 提高.mp3">音频3</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\佐文可 提高.mp3">音频4</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\何欣欣 提高.mp3">音频5</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\何雨容 提高.mp3">音频6</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\侯瑞瑄 提高.mp3">音频7</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\刘叶暄+提高.mp3">音频8</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\刘家彤 提高.mp3">音频9</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\刘桐 提高.mp3">音频10</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\刘雨晴＋提高.mp3">音频11</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\刘静宜+提高.mp3">音频12</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\吴双-提高.mp3">音频13</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\吴宇凡 提高.mp3">音频14</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\吴晓萌提高.mp3">音频15</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\吴雨桐➕提高.mp3">音频16</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\孙佳滢 提高.mp3">音频17</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\孟睿思提高.mp3">音频18</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\崔家慧 提高.mp3">音频19</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\崔雅雅 提高.mp3">音频20</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\张弛 提高.mp3">音频21</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\张琪晗+提高.mp3">音频22</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\张璨 提高.mp3">音频23</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\张起硕+提高.mp3">音频24</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\彭可欣 提高.mp3">音频25</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\徐子淇A提高.mp3">音频26</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\徐子淇B提高.mp3">音频27</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\徐子淇C提高.mp3">音频28</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\徐真＋提高.mp3">音频29</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\晏欣格+提高.mp3">音频30</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\朱小宇 提高.mp3">音频31</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\朱晓禾+提高.mp3">音频32</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\李佳欣+提高.mp3">音频33</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\李依昂 提高.mp3">音频34</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\李婉婉＋提高.mp3">音频35</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\李昊桐+提高.mp3">音频36</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\李梓涵+提高.mp3">音频37</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\李清睿 提高.mp3">音频38</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\李筱琪 提高.mp3">音频39</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\李美潼A提高.mp3">音频40</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\李美潼B提高.mp3">音频41</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\李美潼C提高.mp3">音频42</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\李迪_A_提高.mp3">音频43</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\李迪_B_提高.mp3">音频44</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\李迪_C_提高.mp3">音频45</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\杜云赏 提高.mp3">音频46</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\杨乔云 提高.mp3">音频47</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\杨越+提高.mp3">音频48</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\杨馨怡提高.mp3">音频49</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\植棚梣+提高.mp3">音频50</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\潘亚含 提高.mp3">音频51</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\王可欣 提高.mp3">音频52</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\王嘉铄 提高.mp3">音频53</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\王宇欣 提高.mp3">音频54</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\王若杉 提高.mp3">音频55</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\王雪铌 提高.mp3">音频56</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\白天宇 提高.mp3">音频57</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\石熠琛+提高.mp3">音频58</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\苗艺+提高.mp3">音频59</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\范湘晗 提高.mp3">音频60</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\许畅 提高.mp3">音频61</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\赵文菲提高.mp3">音频62</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\赵沁雅_A_提高.mp3">音频63</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\赵沁雅_B_提高.mp3">音频64</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\赵沁雅_C_提高.mp3">音频65</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\邵盟淋 提高.mp3">音频66</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\邹妙婷 提高.mp3">音频67</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\邹子绫 提高.mp3">音频68</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\邹序萌+提高.mp3">音频69</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\郑光选_A_提高.mp3">音频70</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\郑光选_B_提高.mp3">音频71</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\郑光选_C_提高.mp3">音频72</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\郑爱爱+提高.mp3">音频73</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\郑诗棋提高.mp3">音频74</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\郑雅文+提高.mp3">音频75</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\闫美君＋提高.mp3">音频76</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\陈思如 提高.mp3">音频77</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\韩沐言 提高.mp3">音频78</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\马茹砡 提高.mp3">音频79</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\高佳怡_A_提高.mp3">音频80</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\高佳怡_B_提高.mp3">音频81</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\高佳怡_C_提高.mp3">音频82</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\魏艺琦 提高.mp3">音频83</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\黄可 提高.mp3">音频84</option>
+<option value="C:\Users\Lenovo\Desktop\大创\男女模式\提高\提高女\黄煦 提高.mp3">音频85</option>
+
+
+
+
+                        <!-- 其他音频选项 -->
+                    </select>
+                    <button onclick="playAudio('female')">开始播放</button>
+                    <button onclick="pauseAudio('female')">暂停播放</button>
+                    <!-- 上一首、下一首等按钮 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        var currentAudio = null; // 保存当前正在播放的音频
+
+        function playAudio(gender) {
+            var selectedOption = document.getElementById(gender + "Select").value;
+
+            // 停止当前正在播放的音频
+            if (currentAudio) {
+                currentAudio.pause();
+            }
+
+            var audioPlayer = new Audio(selectedOption);
+            audioPlayer.play();
+            currentAudio = audioPlayer; // 更新当前播放的音频
+        }
+
+        function pauseAudio(gender) {
+            // 暂停当前正在播放的音频
+            if (currentAudio) {
+                currentAudio.pause();
+            }
+        }
+    </script>
+</body>
+</html>
